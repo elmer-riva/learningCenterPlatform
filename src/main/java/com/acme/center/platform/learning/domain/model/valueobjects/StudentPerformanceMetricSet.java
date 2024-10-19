@@ -16,7 +16,15 @@ public record StudentPerformanceMetricSet(Integer totalCompletedCourses, Integer
   public StudentPerformanceMetricSet incrementTotalCompletedCourses() {
     return new StudentPerformanceMetricSet(totalCompletedCourses + 1, totalTutorials);
   }
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
   public StudentPerformanceMetricSet incrementTotalTutorials() {
     return new StudentPerformanceMetricSet(totalCompletedCourses, totalTutorials + 1);
   }
