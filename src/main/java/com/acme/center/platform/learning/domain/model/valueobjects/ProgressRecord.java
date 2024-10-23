@@ -67,8 +67,11 @@ public class ProgressRecord {
 
         if (learningPath.isLastTutorialInLearningPath(tutorialId)) return;
 
-        //TODO: Implement the logic to start the next tutorial in the learning path
-        // It needs getNextTutorialInLearningPath method in LearningPath class
+        Long nextTutorialId = learningPath.getNextTutorialInLearningPath(tutorialId);
+        if (nextTutorialId != null) {
+            ProgressRecordItem nextProgressRecordItem = new ProgressRecordItem(progressRecordItem.getEnrollment(), nextTutorialId);
+            progressRecordItems.add(nextProgressRecordItem);
+        }
     }
 
     /**
