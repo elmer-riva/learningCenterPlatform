@@ -1,4 +1,4 @@
-package com.acme.center.platform.learning.domain.model.agregates;
+package com.acme.center.platform.learning.domain.model.aggregates;
 
 import com.acme.center.platform.learning.domain.model.valueobjects.LearningPath;
 import com.acme.center.platform.shared.domain.model.aggregates.AuditableAbstractAggregateRoot;

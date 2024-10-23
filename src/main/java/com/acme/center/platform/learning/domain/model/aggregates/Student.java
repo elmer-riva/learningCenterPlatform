@@ -1,4 +1,4 @@
-package com.acme.center.platform.learning.domain.model.agregates;
+package com.acme.center.platform.learning.domain.model.aggregates;
 
 import com.acme.center.platform.learning.domain.model.valueobjects.AcmeStudentRecordId;
 import com.acme.center.platform.learning.domain.model.valueobjects.ProfileId;
