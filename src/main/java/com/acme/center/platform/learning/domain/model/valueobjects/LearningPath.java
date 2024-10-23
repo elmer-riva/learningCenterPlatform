@@ -94,6 +94,11 @@ public class LearningPath {
     return learningPathItems.getFirst().getTutorialId();
   }
 
+  public Long getNextTutorialInLearningPath(Long currentTutorialId) {
+    LearningPathItem item = getLearningPathItemWithTutorialId(currentTutorialId);
+    return item != null ? item.getTutorialId() : null;
+  }
+
   /**
    * Get the last tutorial id in the learning path
    * @return The last tutorial id in the learning path
