@@ -4,7 +4,9 @@ import jakarta.persistence.Embeddable;
 
 @Embeddable
 public record StudentPerformanceMetricSet(Integer totalCompletedCourses, Integer totalTutorials) {
-  public StudentPerformanceMetricSet() { this(0, 0); }
+  public StudentPerformanceMetricSet() {
+    this(0, 0);
+  }
 
   public StudentPerformanceMetricSet {
     if (totalCompletedCourses < 0)
@@ -16,15 +18,8 @@ public record StudentPerformanceMetricSet(Integer totalCompletedCourses, Integer
   public StudentPerformanceMetricSet incrementTotalCompletedCourses() {
     return new StudentPerformanceMetricSet(totalCompletedCourses + 1, totalTutorials);
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
   public StudentPerformanceMetricSet incrementTotalTutorials() {
     return new StudentPerformanceMetricSet(totalCompletedCourses, totalTutorials + 1);
   }
